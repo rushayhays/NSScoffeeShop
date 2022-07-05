@@ -14,6 +14,23 @@
        <div id="beanVarietyTable">
         <!-- The bean varieties will display here -->
        </div>
+       <div>
+        <div id="addBeanForm">
+            <!-- The form for adding a bean variety will populate here -->
+            <form>
+                <form action="/action_page.php">
+                    <label for="bname">Name of bean variety:</label><br>
+                    <input type="text" id="bname" name="bname"><br>
+                    <label for="region">Region:</label><br>
+                    <input type="text" id="region" name="region"><br><br>
+                    <label for="notes">Notes about this variety:</label><br>
+                    <input type="text" id="notes" name="notes"><br><br>
+                    <input type="submit" value="Submit">
+                  </form> 
+            </form>
+        </div>
+        <button id="bean-button">Add a Bean Variety</button>
+       </div>
 
         <script src="main.js" type="module"></script>
     </main>

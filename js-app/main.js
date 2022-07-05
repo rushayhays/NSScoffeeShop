@@ -8,7 +8,6 @@ button.addEventListener("click", () => {
     getAllBeanVarieties()
         .then(beanVarieties => {
             console.log(beanVarieties);
-            // const objectList= JSON.parse(beanVarieties)
             showTheBeans(beanVarieties);
         })
 });
@@ -16,3 +15,8 @@ button.addEventListener("click", () => {
 function getAllBeanVarieties() {
     return fetch(url).then(resp => resp.json());
 }
+
+const beanButton = document.querySelector("#bean-button");
+beanButton.addEventListener("click", () => {
+    console.log("cool beans")
+});
